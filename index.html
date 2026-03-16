@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wiki Explorer</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<img 
+src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png"
+class="logo"
+>
+
+<h1>Wiki Explorer</h1>
+
+<p>Search and explore Wikipedia articles instantly</p>
+
+</header>
+
+
+<div class="container">
+
+<div class="search-box">
+
+<input 
+type="text"
+id="searchInput"
+placeholder="Search Wikipedia articles..."
+autocomplete="off"
+>
+
+<button onclick="searchWiki()">Search</button>
+
+<button onclick="clearSearch()">Clear</button>
+
+</div>
+
+
+<div id="loader" class="loader" style="display:none;">
+Searching Wikipedia...
+</div>
+
+
+<div id="results" class="results"></div>
+
+</div>
+
+
+<footer class="footer">
+Created by Vedant 
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
